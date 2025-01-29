@@ -1,14 +1,28 @@
 package xenomorfo;
 
-public class Tipos {
+import java.util.Random;
 
-    public static void main(String[] args) {
-        
-    String[] tiposXeno = new String[3];
-    tiposXeno[0] = "Drone";
-    tiposXeno[1] = "Warrior";
-    tiposXeno[2] = "Queen";
+public enum Tipos {
+    
+    DRONE("Explorador e operário da colmeia."),
+    WARRIOR("Defensor da colmeia e lutador."),
+    QUEEN("Líder da colmeia, responsável pela reprodução.");
 
+    private String descricao;
+
+    Tipos(String descricao) {
+        this.descricao = descricao;
     }
 
+    public String getDescricao() {
+        return descricao;
+    }
+
+    // Método para pegar um tipo aleatório
+    public static Tipos getTipoAleatorio() {
+        Tipos[] valores = Tipos.values();
+        return valores[new Random().nextInt(valores.length)];
+    }
 }
+
+

@@ -22,7 +22,7 @@ public class Xenomorfo {
 
     // construtor do Xenomorfo
 
-
+    public Xenomorfo() {}
 
     public Xenomorfo(int id, String nome, String especie, int saude, int forca, int velocidade, int inteligencia,
             int presas, int xlocal, int ylocal, int alturaMapa, int larguraMapa, boolean ninho) {

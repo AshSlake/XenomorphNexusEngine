@@ -1,6 +1,5 @@
 package localizacoes;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 import xenomorfo.Xenomorfo;
@@ -86,7 +85,7 @@ public class Localizacoes {
 
 
     // Método para posicionar entidades aleatórias no mapa.
-    public void posicionarEntidadesAleatorias(ArrayList<Xenomorfo> xenomorfos) {
+    public void posicionarEntidadesAleatorias(Xenomorfo[] xenomorfos) {
         for (Xenomorfo xenomorfo : xenomorfos) {
             int x, y;
             do {
